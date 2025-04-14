@@ -1,13 +1,12 @@
 global.crypto = require("crypto");
-const {
-  default: makeWASocket,
-  useMultiFileAuthState
-} = require("@whiskeysockets/baileys");
 
+const { default: makeWASocket, useMultiFileAuthState } = require("@whiskeysockets/baileys");
 const P = require("pino");
-const crypto = require("crypto"); // <-- Make sure this is at the top
+const crypto = require("crypto");
 
 console.log("✅ Crypto module loaded");
+
+let qrImageURL; // store the QR code image URL
 
 async function startBot() {
   const authFolder = './auth';
@@ -20,27 +19,27 @@ async function startBot() {
     browser: ["Xason XtarmD", "Linux", "3.0"]
   });
 
+  sock.ev.on("creds.update", saveCreds);
+
   sock.ev.on("connection.update", async (update) => {
-    const { connection, pairingCode } = update;
+    const { connection, pairingCode, qr } = update;
 
     if (pairingCode) {
       console.log("\n===== Pairing Code Mode =====");
-      console.log(`🔑 Code: ${pairingCode}`);
-      console.log("================================\n");
+    }
+
+    if (qr) {
+      qrImageURL = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(qr)}`;
     }
 
     if (connection === "open") {
-      console.log("✅ Successfully connected to WhatsApp!");
-    }
-
-    if (connection || pairingCode) {
-      console.log("Debug update object:", update);
+      console.log("✅ Bot connected successfully!");
     }
   });
-
-  sock.ev.on("creds.update", saveCreds);
-
-  console.log("🚀 Launching Xason XtarmD Bot...");
 }
 
 startBot();
+
+module.exports = {
+  getQR: () => qrImageURL
+};
