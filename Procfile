@@ -1,1 +1,1 @@
-web: node login.js
+web: node server.js
