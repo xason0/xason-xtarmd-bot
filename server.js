@@ -11,4 +11,4 @@ app.listen(PORT, () => {
 });
 
 // Start the bot
-// require("./login");
+ require("./login");
