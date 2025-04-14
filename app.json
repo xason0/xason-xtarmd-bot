@@ -1,0 +1,25 @@
+{
+  "name": "Xason XtarmD Bot",
+  "description": "Custom WhatsApp bot with QR deployment and web panel",
+  "repository": "https://github.com/xason0/xason-xtarmd-bot",
+  "logo": "https://your-image-url.com/logo.png",
+  "keywords": ["whatsapp", "bot", "qr", "nodejs", "heroku"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "PORT": {
+      "description": "Port to run the server on",
+      "value": "3000"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "stack": "heroku-20"
+}
