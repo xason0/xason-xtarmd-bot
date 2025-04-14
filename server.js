@@ -11,4 +11,17 @@ app.listen(PORT, () => {
 });
 
 // Start the bot
- require("./login");
+ const bot = require('./login');
+
+app.get("/qr", (req, res) => {
+    const qr = bot.getQR && bot.getQR();
+    if (!qr) {
+        return res.send('<h3>QR Not Ready. Please refresh in a few seconds.</h3>');
+    }
+    res.send(`
+  <div style="text-align:center">
+    <h2>Scan to Connect WhatsApp</h2>
+    <img src="${qr}" />
+  </div>
+`);
+});
