@@ -23,8 +23,11 @@
       "description": "Owner name",
       "value": "Manasseh Amoako"
     },
-    "OWNER_NUMBER": {
-      "description": "Enter your number eg, 2547xxxxxxxx"
+  "OWNER_NUMBER": {
+  "description": "Your WhatsApp number without '+'",
+  "required": true,
+  "value": "447405817307"
+}
     },
     "PREFIX": {
       "description": "Choose your prefix for your bot",
