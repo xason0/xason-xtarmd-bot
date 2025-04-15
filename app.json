@@ -3,7 +3,7 @@
   "description": "Multifunctional bot made and developed by Manasseh Amoako",
   "repository": "https://github.com/xason0/xason-xtarmd-bot",
   "logo": "https://files.catbox.moe/qw952v.jpeg",
-  "keywords": ["whatsapp", "bot", "multi-device", "baileys"],
+  "keywords": ["whatsapp", "bot", "multi-device", "xason", "xtarmd"],
   "env": {
     "BOT_NAME": {
       "description": "Display name for your bot",
@@ -99,6 +99,10 @@
     },
     "ANTIDELETE_RECOVER_CONVENTION": {
       "description": "Enable anti-delete deleted to recover in conversation (yes/no)",
+      "value": "no"
+    },
+    "AUTO_SAVE_CONTACTS": {
+      "description": "Enable auto-saving of new contacts (yes/no)",
       "value": "no"
     }
   },
