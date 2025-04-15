@@ -23,11 +23,10 @@
       "description": "Owner name",
       "value": "Manasseh Amoako"
     },
-  "OWNER_NUMBER": {
-  "description": "Your WhatsApp number without '+'",
-  "required": true,
-  "value": "447405817307"
-}
+    "OWNER_NUMBER": {
+      "description": "Your WhatsApp number without '+'",
+      "required": true,
+      "value": "447405817307"
     },
     "PREFIX": {
       "description": "Choose your prefix for your bot",
@@ -50,7 +49,7 @@
     },
     "STATUS_REACT_EMOJIS": {
       "description": "Enter your auto like status emojis",
-      "value": "💚,🚀,🌍,✅"
+      "value": "✅💚🚀🌐☑️"
     },
     "WELCOME_MESSAGE": {
       "description": "Enable welcoming message in groups (yes/no)",
