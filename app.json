@@ -1,60 +1,59 @@
 {
   "name": "Xason XtarmD Bot",
-  "description": "Custom WhatsApp bot with QR deployment and web panel by Manasseh Amoako (Xason XtarmD)",
+  "description": "Multifunctional bot made and developed by Manasseh Amoako",
   "repository": "https://github.com/xason0/xason-xtarmd-bot",
-  "logo": "https://your-custom-logo-url.com/logo.png",
-  "keywords": ["whatsapp", "bot", "xason", "xtarmd"],
+  "keywords": ["whatsapp", "bot", "xason", "qr", "multi-device"],
   "env": {
-    "SESSION_ID": {
-      "description": "Your session ID",
-      "required": true
-    },
-    "OWNER_NAME": {
-      "description": "Bot owner's name",
-      "value": "Manasseh Amoako (Xason XtarmD)",
-      "required": true
-    },
-    "OWNER_NUMBER": {
-      "description": "Owner number e.g. 2547xxxxxxxx",
-      "required": true
-    },
-    "PREFIX": {
-      "description": "Command prefix for your bot (e.g. ! or .)",
-      "required": true,
-      "value": "."
-    },
-    "PUBLIC_MODE": {
-      "description": "Enable public mode? (yes/no)",
-      "required": true,
+    "AUTO_BIO": {
+      "description": "Enter yes for your bot to auto update bio",
       "value": "yes"
     },
-    "STARTING_BOT_MESSAGE": {
-      "description": "Enable starting message? (yes/no)",
-      "required": true,
-      "value": "yes"
-    },
-    "WELCOME_MESSAGE": {
-      "description": "Enable welcome message in groups? (yes/no)",
+    "AUTO_DOWNLOAD_STATUS": {
+      "description": "Status will be sent to your inbox automatically (type yes to activate or no to deactivate)",
       "value": "no"
+    },
+    "AUTO_REACT": {
+      "description": "Enter your auto react messages",
+      "value": "no"
+    },
+    "AUTO_REACT_STATUS": {
+      "description": "Enter yes for your bot to auto like status",
+      "value": "yes"
+    },
+    "AUTO_READ": {
+      "description": "Messages will be marked as read automatically (type yes to activate or no to deactivate)",
+      "value": "no"
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Your status will be read automatically (type yes to activate or no to deactivate)",
+      "value": "yes"
+    },
+    "ANTIDELETE_RECOVER_CONVENTION": {
+      "description": "Enable anti-delete deleted to recover in conversation (yes/no)",
+      "value": "no"
+    },
+    "ANTIDELETE_SENT_INBOX": {
+      "description": "Enable anti-delete to be sent inbox (yes/no)",
+      "value": "yes"
+    },
+    "AUDIO_CHATBOT": {
+      "description": "Enable audio chatbot (yes/no)",
+      "value": "no"
+    },
+    "BOT_IMAGE": {
+      "description": "URL to your bot's menu image",
+      "value": "https://files.catbox.moe/qw952v.jpeg"
     },
     "BOT_NAME": {
       "description": "Display name for your bot",
       "value": "Xason XtarmD"
     },
-    "BOT_IMAGE": {
-      "description": "URL to your bot's menu image",
-      "value": "https://files.catbox.moe/h2ydge.jpg"
-    },
-    "AUTO_REACT_STATUS": {
-      "description": "Auto-like status updates (yes/no)",
-      "value": "yes"
-    },
-    "AUTO_READ": {
-      "description": "Mark chats as read automatically (yes/no)",
+    "CHATBOT": {
+      "description": "Enable text chatbot (yes/no)",
       "value": "no"
     },
-    "AUTO_REACT": {
-      "description": "Auto-react to messages (yes/no)",
+    "GOODBYE_MESSAGE": {
+      "description": "Enable goodbye in groups (yes/no)",
       "value": "no"
     },
     "GROUPANTILINK": {
@@ -62,8 +61,48 @@
       "value": "yes"
     },
     "HEROKU_API_KEY": {
-      "description": "Your Heroku API key to manage app vars",
+      "description": "Enter your Heroku API key to be able to control your vars",
       "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Enter your Heroku app name to be able to control vars",
+      "required": true
+    },
+    "OWNER_NAME": {
+      "description": "Owner name",
+      "value": "Manasseh Amoako"
+    },
+    "OWNER_NUMBER": {
+      "description": "Enter your number eg, 2547xxxxxxxx",
+      "required": true
+    },
+    "PREFIX": {
+      "description": "Choose your prefix for your bot",
+      "value": "."
+    },
+    "PRESENCE": {
+      "description": "Presence mode: 1=online, 2=typing, 3=recording",
+      "value": "1"
+    },
+    "PUBLIC_MODE": {
+      "description": "Type yes for public mode or no for private mode",
+      "value": "yes"
+    },
+    "SESSION_ID": {
+      "description": "Your session ID",
+      "required": true
+    },
+    "STARTING_BOT_MESSAGE": {
+      "description": "Enable starting message (yes/no)",
+      "value": "yes"
+    },
+    "STATUS_REACT_EMOJIS": {
+      "description": "Enter your auto like status emojis",
+      "value": "💚,🚀,🌍,✅"
+    },
+    "WELCOME_MESSAGE": {
+      "description": "Enable welcoming message in groups (yes/no)",
+      "value": "no"
     }
   },
   "buildpacks": [
