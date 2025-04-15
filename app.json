@@ -2,79 +2,29 @@
   "name": "Xason XtarmD Bot",
   "description": "Multifunctional bot made and developed by Manasseh Amoako",
   "repository": "https://github.com/xason0/xason-xtarmd-bot",
-  "keywords": ["whatsapp", "bot", "xason", "qr", "multi-device"],
+  "logo": "https://files.catbox.moe/qw952v.jpeg",
+  "keywords": ["whatsapp", "bot", "multi-device", "baileys"],
   "env": {
-    "AUTO_BIO": {
-      "description": "Enter yes for your bot to auto update bio",
-      "value": "yes"
-    },
-    "AUTO_DOWNLOAD_STATUS": {
-      "description": "Status will be sent to your inbox automatically (type yes to activate or no to deactivate)",
-      "value": "no"
-    },
-    "AUTO_REACT": {
-      "description": "Enter your auto react messages",
-      "value": "no"
-    },
-    "AUTO_REACT_STATUS": {
-      "description": "Enter yes for your bot to auto like status",
-      "value": "yes"
-    },
-    "AUTO_READ": {
-      "description": "Messages will be marked as read automatically (type yes to activate or no to deactivate)",
-      "value": "no"
-    },
-    "AUTO_READ_STATUS": {
-      "description": "Your status will be read automatically (type yes to activate or no to deactivate)",
-      "value": "yes"
-    },
-    "ANTIDELETE_RECOVER_CONVENTION": {
-      "description": "Enable anti-delete deleted to recover in conversation (yes/no)",
-      "value": "no"
-    },
-    "ANTIDELETE_SENT_INBOX": {
-      "description": "Enable anti-delete to be sent inbox (yes/no)",
-      "value": "yes"
-    },
-    "AUDIO_CHATBOT": {
-      "description": "Enable audio chatbot (yes/no)",
-      "value": "no"
+    "BOT_NAME": {
+      "description": "Display name for your bot",
+      "value": "Xason XtarmD"
     },
     "BOT_IMAGE": {
       "description": "URL to your bot's menu image",
       "value": "https://files.catbox.moe/qw952v.jpeg"
     },
-    "BOT_NAME": {
-      "description": "Display name for your bot",
-      "value": "Xason XtarmD"
-    },
-    "CHATBOT": {
-      "description": "Enable text chatbot (yes/no)",
-      "value": "no"
-    },
-    "GOODBYE_MESSAGE": {
-      "description": "Enable goodbye in groups (yes/no)",
-      "value": "no"
-    },
-    "GROUPANTILINK": {
-      "description": "Enable group anti-link protection (yes/no)",
-      "value": "yes"
-    },
     "HEROKU_API_KEY": {
-      "description": "Enter your Heroku API key to be able to control your vars",
-      "required": true
+      "description": "Enter your Heroku API key to be able to control your vars"
     },
     "HEROKU_APP_NAME": {
-      "description": "Enter your Heroku app name to be able to control vars",
-      "required": true
+      "description": "Enter your Heroku app name to be able to control your vars"
     },
     "OWNER_NAME": {
       "description": "Owner name",
       "value": "Manasseh Amoako"
     },
     "OWNER_NUMBER": {
-      "description": "Enter your number eg, 2547xxxxxxxx",
-      "required": true
+      "description": "Enter your number eg, 2547xxxxxxxx"
     },
     "PREFIX": {
       "description": "Choose your prefix for your bot",
@@ -89,8 +39,7 @@
       "value": "yes"
     },
     "SESSION_ID": {
-      "description": "Your session ID",
-      "required": true
+      "description": "Your session ID"
     },
     "STARTING_BOT_MESSAGE": {
       "description": "Enable starting message (yes/no)",
@@ -102,6 +51,54 @@
     },
     "WELCOME_MESSAGE": {
       "description": "Enable welcoming message in groups (yes/no)",
+      "value": "no"
+    },
+    "GOODBYE_MESSAGE": {
+      "description": "Enable goodbye in groups (yes/no)",
+      "value": "no"
+    },
+    "GROUPANTILINK": {
+      "description": "Enable group anti-link protection (yes/no)",
+      "value": "yes"
+    },
+    "AUTO_BIO": {
+      "description": "Enter yes for your bot to auto update bio",
+      "value": "yes"
+    },
+    "AUTO_REACT": {
+      "description": "Enter your auto react messages",
+      "value": "no"
+    },
+    "AUTO_REACT_STATUS": {
+      "description": "Enter yes for your bot to auto like status",
+      "value": "yes"
+    },
+    "AUTO_READ": {
+      "description": "Messages will be marked as read automatically (yes/no)",
+      "value": "no"
+    },
+    "AUTO_READ_STATUS": {
+      "description": "Your status will be read automatically (yes/no)",
+      "value": "yes"
+    },
+    "AUTO_DOWNLOAD_STATUS": {
+      "description": "Status will be sent to your inbox automatically (yes/no)",
+      "value": "no"
+    },
+    "AUDIO_CHATBOT": {
+      "description": "Enable audio chatbot (yes/no)",
+      "value": "no"
+    },
+    "CHATBOT": {
+      "description": "Enable text chatbot (yes/no)",
+      "value": "no"
+    },
+    "ANTIDELETE_SENT_INBOX": {
+      "description": "Enable anti-delete to be sent inbox (yes/no)",
+      "value": "yes"
+    },
+    "ANTIDELETE_RECOVER_CONVENTION": {
+      "description": "Enable anti-delete deleted to recover in conversation (yes/no)",
       "value": "no"
     }
   },
