@@ -1,0 +1,23 @@
+{
+  "name": "xason-xtarmd",
+  "version": "2.0.0",
+  "description": "Xason XtarMD WhatsApp bot powered by Baileys",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node login.js"
+  },
+  "keywords": [
+    "bot",
+    "Baileys",
+    "Xason XtarMD",
+    "whatsapp-bot"
+  ],
+  "author": "Manasseh Amoako",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.16",
+    "express": "^5.1.0",
+    "pino": "^8.0.0"
+  }
+}
