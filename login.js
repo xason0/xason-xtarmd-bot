@@ -2,12 +2,13 @@ global.crypto = require("crypto");
 
 const { default: makeWASocket, useMultiFileAuthState } = require("@whiskeysockets/baileys");
 const P = require("pino");
+const crypto = require("crypto");
 const fs = require("fs");
 const path = require("path");
 
 console.log("✅ Crypto module loaded!");
 
-let qrImageURL; // To store QR image URL
+let qrImageURL; // To store the QR image URL
 
 // === CONTACT SAVE HELPER ===
 function saveContactToFile(name, number) {
@@ -33,7 +34,7 @@ async function startBot() {
     logger: P({ level: "silent" }),
     auth: state,
     printQRInTerminal: true,
-    browser: ["Xason XtarmD", "Linux", "3.0"]
+    browser: ["Xason XtarMD", "Linux", "3.0"]
   });
 
   sock.ev.on("creds.update", saveCreds);
@@ -59,7 +60,7 @@ async function startBot() {
     const { connection, pairingCode, qr } = update;
 
     if (pairingCode) {
-      console.log("\n===== Pairing Code Mode =====");
+      console.log(`\n===== Pairing Code Mode =====`);
       console.log(`Pairing Code: ${pairingCode}`);
     }
 
