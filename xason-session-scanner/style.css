@@ -1,0 +1,37 @@
+body {
+  background-color: #000;
+  color: #0ff;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+  border: 2px solid #0ff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #0ff;
+}
+
+input, button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  margin: 1rem 0;
+  width: 90%;
+  max-width: 300px;
+}
+
+button {
+  background-color: #0ff;
+  border: none;
+  cursor: pointer;
+}
+
+pre {
+  background: #111;
+  color: #0f0;
+  padding: 1rem;
+  text-align: left;
+}

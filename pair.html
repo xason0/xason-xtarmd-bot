@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WhatsApp Pairing Code</title>
+  <link rel="stylesheet" href="assets/pairing-style.css" />
+  <style>
+    #pairing-code {
+      font-size: 26px;
+      font-weight: bold;
+      color: #00ffcc;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 12px;
+      text-align: center;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #00ffcc; }
+      to { text-shadow: 0 0 20px #00ffcc; }
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background: #222;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #00ffcc;
+      color: #000;
+    }
+
+    h1 {
+      color: #fff;
+      text-align: center;
+    }
+
+    body {
+      background: linear-gradient(135deg, #000, #1a1a1a);
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>WhatsApp Pairing Code</h1>
+    <div id="pairing-code">Loading...</div>
+    <a href="index.html" class="back-btn">Back to Home</a>
+  </div>
+
+  <script>
+    // Xason updated: Send number to backend
+    const phoneNumber = "+447405817307"; // Change to your number if needed
+
+    fetch("http://localhost:8000/pairing-code/?number=" + encodeURIComponent(phoneNumber))
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("pairing-code").innerText =
+          "Pairing Code: " + (data.code || "No code available");
+      })
+      .catch(error => {
+        console.error("Error fetching code:", error);
+        document.getElementById("pairing-code").innerText = "Failed to load pairing code.";
+      });
+  </script>
+</body>
+</html>
