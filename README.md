@@ -1,11 +1,23 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=35&pause=750&color=F7C439&center=true&width=600&lines=Welcome+to+Xason+XtarmD+Bot;Built+by+Manasseh+Amoako;Deploy+and+scan+your+session+below)](https://git.io/typing-svg)
-
-<img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
-
-<a href="#"><img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=50&pause=1000&color=F7C439&center=true&width=910&height=100&lines=XASON+XTARMD+BOT" alt="Typing SVG" /></a>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=40&duration=4000&pause=200&color=FF00FF&background=FFFFFF00&center=true&vCenter=true&width=900&height=80&lines=Welcome+to+XASON+XTARMD+BOT;Built+by+Manasseh+Amoako;Deploy+and+Scan+Session+Below" alt="Typing SVG" />
+</p>
 
 <p align="center">
-  <img src="https://files.catbox.moe/qw952v.jpeg" width="180px" height="180px" />
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://files.catbox.moe/qw952v.jpeg" width="180px" height="180px" style="border-radius: 50%; box-shadow: 0 0 20px rgba(255,0,255,0.6);" />
+</p>
+
+---
+
+## 🚀 Badges
+
+<p align="center">
+  <img src="https://img.shields.io/github/stars/xason0/xason-xtarmd-bot?style=for-the-badge&color=blue" alt="Stars Badge">
+  <img src="https://img.shields.io/github/forks/xason0/xason-xtarmd-bot?style=for-the-badge&color=purple" alt="Forks Badge">
+  <img src="https://komarev.com/ghpvc/?username=xason0&style=for-the-badge&color=green" alt="Profile Views">
 </p>
 
 ---
@@ -14,7 +26,7 @@
 
 | Feature | Link |
 |--------|------|
-| **Scan QR / Get Session** | [![Scan QR](https://img.shields.io/badge/SCAN_SESSION-3f3f46?style=for-the-badge&logo=whatsapp&logoColor=25D366)](https://xason-bot-cbb019ffeb21.herokuapp.com/qr) |
+| **Scan QR / Get Session** | [![Scan QR](https://img.shields.io/badge/SCAN_SESSION-3f3f46?style=for-the-badge&logo=whatsapp&logoColor=25D366)](https://xason-frontend.onrender.com) |
 | **GitHub Repo** | [![Repo](https://img.shields.io/badge/Xason-XtarmD--Bot-181717?style=for-the-badge&logo=github)](https://github.com/xason0/xason-xtarmd-bot) |
 | **Deploy to Heroku** | [![Heroku](https://img.shields.io/badge/Deploy%20to%20Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)](https://heroku.com/deploy?template=https://github.com/xason0/xason-xtarmd-bot) |
 
@@ -44,20 +56,47 @@
 
 ---
 
-## ✨ Author
+## 🛠️ Termux/SSH/Ubuntu Setup
 
-**Manasseh Amoako**  
-_Bot Developer, UI Designer & WhatsApp Automation Enthusiast_  
-[xason0 on GitHub](https://github.com/xason0)
+Before running these commands, make sure your Termux is updated:
 
----
+```bash
+apt update && apt upgrade
+pkg update && pkg upgrade
+pkg install bash
+pkg install git -y
+pkg install nodejs -y
+pkg install ffmpeg -y
+pkg install wget
+pkg install imagemagick -y
+pkg install yarn
+termux-setup-storage
+cd /storage/emulated/0/Download/
+yarn install
+npm start
 
-## 📝 License
+Starting Termux Again Later
+cd /storage/emulated/0/Download/
+npm start
+
+✨ Author
+
+Manasseh Amoako
+Bot Developer, UI Designer & WhatsApp Automation Enthusiast
+xason0 on GitHub
+
+📝 License
 
 Licensed under MIT.
 
----
+<p align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
+</p>
 
-<img src="https://i.imgur.com/dBaSKWF.gif" height="90" width="100%">
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Black+Ops+One&size=25&pause=1000&color=00F0FF&center=true&vCenter=true&width=600&lines=✨+Powered+by+Xason+XtarmD+✨" alt="Typing Footer" />
+</p>
+```
 
 
+➔ Updated README with correct instructions and session link
